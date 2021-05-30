@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <link href=../../css/reglas.css rel="stylesheet" />
     <title>Libro </title>
 
 
@@ -12,6 +12,10 @@
 </head>
 
 <body>
+<header>
+        <img class="logo" src="../../imagenes/LOGO UPS.png" alt="logo Ups" />
+        <br><br><br><br><br><br>
+    </header>
     <h1>
         <center>  Libro</center>
     </h1>
@@ -85,5 +89,14 @@
     <br>
 
 </body>
+<footer>
+    Jose Guillermo Quinde Delgado&#8226; Universidad Politecnica Salesiana, <a
+        href="https://mail.google.com/mail/u/0/#inbox">jquinded@est.ups.edu.ec</a> &#8226;
+    <a href=”0991352595”> 0991352595 </a>
+    <br>© Todos los derechos reservados<br>
+
+    <br>
+
+</footer>
 </html>
 

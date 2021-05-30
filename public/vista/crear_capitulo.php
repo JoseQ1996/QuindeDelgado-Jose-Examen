@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../../js/buscar_autor.js"></script>
+    <link href=../../css/reglas.css rel="stylesheet" />
+    <link href=../../css/estilos.css rel="stylesheet" />
     <title>Agregar Capitulo</title>
 </head>
 
@@ -15,7 +17,7 @@
     <?php
     $codigo = $_GET["codigo"];
     ?>
-<form  id="formulario01" method="POST"action="../controladores/agregar_capitulo.php"> 
+<form  class="formu "id="formulario01" method="POST"action="../controladores/agregar_capitulo.php"> 
  
          <input type="hidden" id="codLib" name="codlib" value="<?php echo $codigo ?>"  />     
         <label for="num_cap">Numero Capitulo (*)</label>

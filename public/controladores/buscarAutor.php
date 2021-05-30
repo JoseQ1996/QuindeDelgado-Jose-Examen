@@ -15,9 +15,7 @@
  <th>Nombre Libro</th>
  <th>Numero Capitulo</th>
  <th>Titulo Capitulo</th>
- <th></th>
- <th></th>
- <th></th>
+ 
  </tr>";
  if ($result->num_rows > 0) {
  while($row = $result->fetch_assoc()) {

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Listar Libros</title>
-    <link href="../../../css/indexadmin.css" rel="stylesheet" />
+    <link href=../../css/reglas.css rel="stylesheet" />
+    <link href=../../css/estilos.css rel="stylesheet" />
 </head>
 
 <body>
@@ -22,8 +23,9 @@
         if ($result->num_rows > 0) {
 
             while ($row = $result->fetch_assoc()) {
-               echo "<table style='width:100%'>";
+               echo "<table style='width:90%'>";
         echo"<tr>";
+           echo "<center><h3>LIBRO</h3></center>";
             echo"<th>Nombre Libro</th>";
             echo "<th>ISBN Libro</th>";
             echo "<th>Numero Paginas</th>";
