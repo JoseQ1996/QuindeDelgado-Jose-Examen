@@ -46,7 +46,7 @@
         <?php
         include '../../config/conexionBD.php';
         $sql = "SELECT * FROM capitulo WHERE cap_lib_codigo='$codigo'";
-        echo($sql);
+        //echo($sql);
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
 
@@ -54,9 +54,18 @@
                 echo "<tr>";
                 echo " <td>" . $row['cap_numero'] . "</td>";
                 echo " <td>" . $row['cap_titulo'] . "</td>";
-                echo " <td>" . $row['cap_aut_codigo'] . "</td>";
-                echo " <td> <a href='eliminar.php?codigo=" . $row['cap_codigo'] . "'>Eliminar</a> </td>";
-                echo " <td> <a href='modificar.php?codigo=" . $row['cap_codigo'] . "'>Modificar</a> </td>";
+                $auto = $row['cap_aut_codigo'];
+                $sql1 = "SELECT aut_nombre FROM autor WHERE aut_codigo='$auto'";
+                //echo($sql1);
+                $result1 = $conn->query($sql1);
+                if ($result1->num_rows > 0) {
+                    $row1 = $result1->fetch_assoc();
+                    
+                    $autor=$row1['aut_nombre'];
+                } else {
+                    echo " No existe autor";
+                }
+                echo " <td>" . $autor . "</td>";
                 echo "</tr>";
             }
         } else {

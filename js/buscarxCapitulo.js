@@ -1,4 +1,4 @@
-function buscarPorAutor() {
+function buscarxpCapitulo() {
     var autor = document.getElementById("autor").value;
     if (autor == "") {
         document.getElementById("informacion").innerHTML = "";
@@ -16,7 +16,7 @@ function buscarPorAutor() {
                 document.getElementById("informacion").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../controladores/buscar_autor.php?autor=" + autor, true);
+        xmlhttp.open("GET", "../controladores/buscarAutor.php?autor=" + autor, true);
         xmlhttp.send();
     }
     return false;

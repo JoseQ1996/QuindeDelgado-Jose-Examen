@@ -16,7 +16,7 @@
     include '../../config/conexionBD.php';
     $autor= $_POST["autor"];
     $sql = "SELECT aut_codigo FROM autor WHERE aut_nombre='$autor'";
-    echo($sql);
+    //echo($sql);
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -31,7 +31,7 @@
     include '../../config/conexionBD.php';
     $codLib=$_POST['codlib'];
     $sql = "SELECT lib_nombre FROM libro WHERE lib_codigo='$codLib'";
-    echo($sql);
+    //echo($sql);
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
@@ -50,7 +50,7 @@
     $codLib=$_POST['codlib'];
             $sql="INSERT into capitulo (cap_codigo,cap_numero,cap_titulo,cap_lib_codigo,cap_aut_codigo)
 			values (0,'$numCap','$titCap','$codLib','$codAut')";
-echo($sql);
+//echo($sql);
     if ($conn->query($sql) === TRUE) {
         echo "<p>Se ha ingresado el Capitulo</p>";
     } else {
