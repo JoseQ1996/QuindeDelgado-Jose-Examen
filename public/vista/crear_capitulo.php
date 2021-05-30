@@ -45,8 +45,8 @@
             ?>
         </select>
         <br><br>
-    <div id="informacion"><b></b></div>
-    <br><br>
+        <div id="informacion"><b></b></div>
+        <br><br>
         <input class="boton" type="submit" id="crear" name="crear" value="Agregar Capitulo" />
         <input class="boton" type="reset" id="cancelar" name="cancelar" value="Cancelar" />
         <br><br>
