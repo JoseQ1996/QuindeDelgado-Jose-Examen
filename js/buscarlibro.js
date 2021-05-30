@@ -1,7 +1,7 @@
-function buscarPorAutor() {
-    var autor = document.getElementById("autor").value;
-    if (autor == "") {
-        document.getElementById("informacion").innerHTML = "";
+function buscarLibro() {
+    var libro = document.getElementById("nombre").value;
+    if (libro == "") {
+        document.getElementById("nomLib").innerHTML = "";
     } else {
         if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
@@ -13,10 +13,10 @@ function buscarPorAutor() {
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 //alert("llegue");
-                document.getElementById("informacion").innerHTML = this.responseText;
+                document.getElementById("nomLib").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "../public/controladores/buscar_autor.php?autor=" + autor, true);
+        xmlhttp.open("GET", "../public/controladores/buscarLibro.php?libro=" + libro, true);
         xmlhttp.send();
     }
     return false;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Libro</title>
+
+
+
+</head>
+
+<body>
+    <h1>
+        <center> Agregar Libro</center>
+    </h1>
+    <form id="formulario01" method="POST" action="../controladores/agregar_libro.php">
+        <br>
+        <label for="cedula">Nombre (*)</label>
+        <input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese el titulo del libro" />
+        <br><br>
+
+        <label for="nombres">ISBN (*)</label>
+        <input type="text" id="isbn" name="isbn" value="" placeholder="Ingrese el ISBN del libro ...
+       " />
+        <br><br>
+        <label for="apellidos">Numero de Paginas (*)</label>
+        <input type="text" id="num_pag" name="num_pag" value="" placeholder="Ingrese el numero de paginas ...
+        " />
+        <br><br>
+        <input class="boton" type="submit" id="crear" name="crear" value="Crear Libro" />
+        <input class="boton" type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+        <br>
+
+    </form>
+
+</html>
